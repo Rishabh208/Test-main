@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        GITHUB_REPO_URL = 'https://github.com/SiddheshDare/Test.git'
+        GITHUB_REPO_URL = 'https://github.com/Rishabh208/Test-main.git'
         DOCKER_HUB_CREDS = credentials('DockerHubCred')
         DOCKER_IMAGE_BACKEND = 'rksingh5/employee_attrition1-backend'
         DOCKER_IMAGE_FRONTEND = 'rksingh5/employee_attrition1-frontend'
