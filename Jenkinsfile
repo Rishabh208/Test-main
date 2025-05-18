@@ -72,7 +72,7 @@ pipeline {
         
         stage('Verify Deployment') {
             steps {
-                withCredentials([file(credentialsId: 'mykubeconfig', variable: 'KUBECONFIG_FILE')]) {
+                withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG_FILE')]) {
                     sh '''
                     KUBECONFIG=${KUBECONFIG_FILE} kubectl get pods -n employee-attrition
                     KUBECONFIG=${KUBECONFIG_FILE} kubectl get services -n employee-attrition
